@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: go-rbac
+  description: |
+    Reusable Go library: JWT issuance/verification + role and permission
+    authorization, with chi and gin adapters. Powers hases-api,
+    fintech-backend, and any new Go service in the catalog.
+  tags: [go, library, auth, jwt, rbac, chi, gin]
+  annotations:
+    github.com/project-slug: nick130920/go-rbac
+    backstage.io/source-location: url:https://github.com/nick130920/go-rbac
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - url: https://github.com/nick130920/go-rbac
+      title: Source
+      icon: github
+    - url: https://pkg.go.dev/github.com/nick130920/go-rbac
+      title: GoDoc
+      icon: docs
+spec:
+  type: library
+  lifecycle: production
+  owner: platform-team
+  system: identity-platform
+  providesApis:
+    - auth-token-api
