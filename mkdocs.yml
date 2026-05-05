@@ -1,0 +1,11 @@
+site_name: 'go-rbac'
+site_description: 'Reusable Go library: JWT issuance/verification + role and permission RBAC.'
+
+nav:
+  - Overview: README.md
+  - Migration:
+      - Hases (chi): docs/migration-hases.md
+      - Fintech (gin): docs/migration-fintech.md
+
+plugins:
+  - techdocs-core
